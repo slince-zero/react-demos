@@ -17,7 +17,10 @@ function App() {
       {/* <StarRating noOfStars={10}/> */}
 
       {/* 图片轮播组件 */}
-      <ImageSlider />
+      {/* <ImageSlider /> */}
+
+      {/* 加载更多数据组件（类似瀑布流） */}
+      <LoadMoreData />
     </div>
   )
 }
