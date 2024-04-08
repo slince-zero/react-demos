@@ -1,7 +1,7 @@
 import Accordian from './components/accordian'
 import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
-
+import ImageSlider from './components/image-slider'
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,10 @@ function App() {
       {/* <RandomColor /> */}
 
       {/* 星星评分组件 */}
-      <StarRating noOfStars={10}/>
+      {/* <StarRating noOfStars={10}/> */}
+
+      {/* 图片轮播组件 */}
+      <ImageSlider />
     </div>
   )
 }
