@@ -15,7 +15,7 @@ function App() {
       {/* <StarRating noOfStars={10}/> */}
 
       {/* 图片轮播组件 */}
-      <ImageSlider />
+      <ImageSlider url={'https://picsum.photos/v2/list'} page={1} limit={10} />
     </div>
   )
 }
