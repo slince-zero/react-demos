@@ -2,20 +2,28 @@ import { useState } from 'react'
 import { FaStar } from 'react-icons/fa'
 import './styles.css'
 
+import PropType from 'prop-types'
+
+StarRating.propTypes = {
+  noOfStars: PropType.number,
+}
+/**
+ * 这个组件在我的谷歌浏览器上显示有点问题，但是在 Edge 上没有问题，就很奇怪
+ */
 function StarRating({ noOfStars = 5 }) {
   const [rating, setRating] = useState(0)
   const [hover, setHover] = useState(0)
 
   function handleClick(getCurrentIndex) {
-    console.log(getCurrentIndex)
+    setRating(getCurrentIndex)
   }
   function handleMouseMove(getCurrentIndex) {
-    console.log('1111')
-    console.log(getCurrentIndex)
+    console.log('111')
+    setHover(getCurrentIndex)
   }
 
-  function handleMouseLeave(getCurrentIndex) {
-    console.log(getCurrentIndex)
+  function handleMouseLeave() {
+    setHover(rating)
   }
 
   return (
@@ -29,7 +37,7 @@ function StarRating({ noOfStars = 5 }) {
             className={index <= (hover || rating) ? 'active' : 'inactive'}
             onClick={() => handleClick(index)}
             onMouseMove={() => handleMouseMove(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
+            onMouseLeave={() => handleMouseLeave()}
             size={40}
           />
         )
