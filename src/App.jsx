@@ -17,10 +17,7 @@ function App() {
       {/* <StarRating noOfStars={10}/> */}
 
       {/* 图片轮播组件 */}
-      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={1} limit={10} /> */}
-
-      {/* 加载更多数据组件（类似瀑布流） */}
-      <LoadMoreData/>
+      <ImageSlider />
     </div>
   )
 }
