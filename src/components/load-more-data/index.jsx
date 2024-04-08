@@ -2,7 +2,7 @@
 
 function LoadMoreData(){
     return (
-        <div>222</div>
+        <div>test</div>
     )
 }
 
