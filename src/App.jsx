@@ -2,6 +2,8 @@ import Accordian from './components/accordian'
 import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
 import ImageSlider from './components/image-slider'
+import LoadMoreData from './components/load-more-data'
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +17,10 @@ function App() {
       {/* <StarRating noOfStars={10}/> */}
 
       {/* 图片轮播组件 */}
-      <ImageSlider />
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={1} limit={10} /> */}
+
+      {/* 加载更多数据组件（类似瀑布流） */}
+      <LoadMoreData/>
     </div>
   )
 }
