@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.product_list {
+    display: grid;  /* 将容器设置为网格布局 */
+    grid-template-columns: repeat(4, 1fr);  /* 创建一个含有四列的网格，每列宽度平均分配可用空间 */
+    gap: 10px;  /* 设置网格中各项之间的间隙为 10 像素 */
+}
+
+.product{
+    padding: 20px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+}
