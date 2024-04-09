@@ -1,8 +1,7 @@
-const treeData = [
+const menuData = [
   {
     label: '首页',
     to: '/home',
-    children: [],
   },
   {
     label: '关于我们',
@@ -11,12 +10,20 @@ const treeData = [
       {
         label: '公司历史',
         to: '/about/history',
-        children: [],
       },
       {
         label: '团队成员',
         to: '/about/team',
-        children: [],
+        children: [
+          {
+            label: '成员1',
+            to: '/about/team/member1',
+          },
+          {
+            label: '成员2',
+            to: '/about/team/member2',
+          },
+        ],
       },
     ],
   },
@@ -31,19 +38,16 @@ const treeData = [
           {
             label: '产品1',
             to: '/products/new/product1',
-            children: [],
           },
           {
             label: '产品2',
             to: '/products/new/product2',
-            children: [],
           },
         ],
       },
       {
         label: '热销',
         to: '/products/hot',
-        children: [],
       },
     ],
   },
@@ -54,12 +58,10 @@ const treeData = [
       {
         label: '售后支持',
         to: '/services/support',
-        children: [],
       },
       {
         label: '客户服务',
         to: '/services/customer',
-        children: [],
       },
     ],
   },
@@ -70,15 +72,13 @@ const treeData = [
       {
         label: '联系方式',
         to: '/contact/method',
-        children: [],
       },
       {
         label: '在线反馈',
         to: '/contact/feedback',
-        children: [],
       },
     ],
   },
 ]
 
-export default treeData
+export default menuData

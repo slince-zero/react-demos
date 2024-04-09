@@ -4,7 +4,7 @@ import StarRating from './components/star-rating'
 import ImageSlider from './components/image-slider'
 import LoadMoreData from './components/load-more-data'
 import TreeView from './components/tree-view'
-
+import menuData from './components/tree-view/data'
 function App() {
   return (
     <div className="App">
@@ -24,7 +24,7 @@ function App() {
       {/* <LoadMoreData /> */}
 
       {/* 树形结构组件 */}
-      <TreeView />
+      <TreeView menus={menuData} />
     </div>
   )
 }

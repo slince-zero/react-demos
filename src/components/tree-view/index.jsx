@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+import MenuList from './menu-list'
 
-
-function TreeView(){
-    return (
-        <div>111</div>
-    )
+function TreeView({ menus = [] }) {
+  return (
+    <div>
+      <MenuList items={menus} />
+    </div>
+  )
 }
-
 
 export default TreeView
