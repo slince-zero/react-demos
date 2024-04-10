@@ -6,6 +6,8 @@ import LoadMoreData from './components/load-more-data'
 import TreeView from './components/tree-view'
 import menuData from './components/tree-view/data'
 import QRCodeGenerator from './components/qr-code'
+import LightDarkMode from './components/light-dark-mode'
+
 function App() {
   return (
     <div className="App">
@@ -28,7 +30,10 @@ function App() {
       {/* <TreeView menus={menuData} /> */}
 
       {/* 二维码生成组件 */}
-      <QRCodeGenerator/>
+      {/* <QRCodeGenerator/> */}
+
+      {/* 切换白天黑夜主题样式 */}
+      <LightDarkMode />
     </div>
   )
 }
