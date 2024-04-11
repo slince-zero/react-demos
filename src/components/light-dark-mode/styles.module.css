@@ -1,0 +1,43 @@
+:root {
+    /* :root 伪类选择器内声明，这是一个特殊的选择器，它相当于文档树的根元素 */
+    --background: #fff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #fff;
+}
+
+[data-theme='dark'] {
+    --background: #000;
+    --text-primary: #fff;
+    --button-bg: #fff;
+    --button-text: #000;
+}
+
+.light_dark_mode {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.light_dark_mode p {
+    color: var(--text-primary);
+    font-size: 40px;
+}
+
+.light_dark_mode button {
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-bg);
+    color: var(--button-text);
+    padding: 12px;
+    /*设置按钮的最大宽度，防止在flex布局下，继承父级宽度*/
+    max-width: 200px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}

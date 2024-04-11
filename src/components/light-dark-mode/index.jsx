@@ -7,9 +7,9 @@ function LightDarkMode() {
   function handleChangeTheme() {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
-  console.log(theme)
+  // console.log(theme)
   return (
-    <div className={styles.container}>
+    <div className={styles.light_dark_mode} data-theme={theme}>
       <p>Hello World!</p>
       <button onClick={handleChangeTheme}>切换主题</button>
     </div>
