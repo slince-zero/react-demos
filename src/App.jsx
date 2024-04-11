@@ -7,6 +7,8 @@ import TreeView from './components/tree-view'
 import menuData from './components/tree-view/data'
 import QRCodeGenerator from './components/qr-code'
 import LightDarkMode from './components/light-dark-mode'
+import ScrollIndicator from './components/scroll-indicator'
+
 
 function App() {
   return (
@@ -33,7 +35,10 @@ function App() {
       {/* <QRCodeGenerator/> */}
 
       {/* 切换白天黑夜主题样式 */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
+
+      {/* 滚动条组件 */}
+      <ScrollIndicator/>
     </div>
   )
 }
