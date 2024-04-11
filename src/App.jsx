@@ -9,7 +9,6 @@ import QRCodeGenerator from './components/qr-code'
 import LightDarkMode from './components/light-dark-mode'
 import ScrollIndicator from './components/scroll-indicator'
 
-
 function App() {
   return (
     <div className="App">
@@ -38,7 +37,7 @@ function App() {
       {/* <LightDarkMode /> */}
 
       {/* 滚动条组件 */}
-      <ScrollIndicator/>
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
     </div>
   )
 }
