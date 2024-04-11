@@ -54,6 +54,17 @@ function ScrollIndicator({ url }) {
         className={style.progress}
         style={{ width: scrollPercentage + '%' }}
       ></div>
+      <img
+        src="./../../../public/miku.gif"
+        alt="miku"
+        style={{
+          position: 'fixed',
+          width:'70px',
+          height:'70px',
+          left: `calc(${scrollPercentage}% - 0px)`,
+          bottom: 0,
+        }}
+      />
       <h2>滚动条组件</h2>
       {data && data.length > 0
         ? data.map((item) => <p key={item.id}>{item.title}</p>)
