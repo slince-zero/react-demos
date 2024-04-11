@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Accordian from './components/accordian'
 import RandomColor from './components/random-color'
 import StarRating from './components/star-rating'
@@ -8,6 +9,7 @@ import menuData from './components/tree-view/data'
 import QRCodeGenerator from './components/qr-code'
 import LightDarkMode from './components/light-dark-mode'
 import ScrollIndicator from './components/scroll-indicator'
+import Tabs from './components/custom-tabs/tabs'
 
 function App() {
   return (
@@ -37,7 +39,10 @@ function App() {
       {/* <LightDarkMode /> */}
 
       {/* 滚动条组件 */}
-      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
+      {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
+
+      {/* Tabs组件 */}
+      <Tabs />
     </div>
   )
 }
