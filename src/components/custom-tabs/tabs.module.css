@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebabab;
+}
+
+.heading {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #b3a0e9;
+}
+
+.heading span{
+    cursor: pointer;
+}
+
+.content {
+    color: aquamarine;
+}
