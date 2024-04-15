@@ -13,6 +13,7 @@ import TabsTest from './components/custom-tabs/tab-test'
 import CustomModalPopup from './components/custom-modal-popup'
 import GithubProfileFinder from './components/github-profile-finder'
 import SearchAutocomplete from './components/search-autocomplete'
+import BoardGame from './components/square-game'
 
 function App() {
   return (
@@ -54,7 +55,10 @@ function App() {
       {/* <GithubProfileFinder /> */}
 
       {/* 自动搜索组件 */}
-      <SearchAutocomplete />
+      {/* <SearchAutocomplete /> */}
+
+      {/* 井字棋游戏 */}
+      <BoardGame />
     </div>
   )
 }
