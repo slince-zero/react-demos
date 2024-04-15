@@ -12,6 +12,7 @@ import ScrollIndicator from './components/scroll-indicator'
 import TabsTest from './components/custom-tabs/tab-test'
 import CustomModalPopup from './components/custom-modal-popup'
 import GithubProfileFinder from './components/github-profile-finder'
+import SearchAutocomplete from './components/search-autocomplete'
 
 function App() {
   return (
@@ -50,7 +51,10 @@ function App() {
       {/* <CustomModalPopup /> */}
 
       {/* Github用户搜索组件 */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      {/* 自动搜索组件 */}
+      <SearchAutocomplete />
     </div>
   )
 }
