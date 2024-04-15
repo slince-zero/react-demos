@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.warpper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.in_btn {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.userCard{
+    width: 100%;
+    display: flex;
+}
+
+.userCard img {
+    width: 100px;
+    border-radius: 5px;
+}
+.info{
+    margin: 0 10px;
+}
+.info a{
+    text-decoration: none;
+    color: #9dd0f0;
+}
