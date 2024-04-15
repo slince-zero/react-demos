@@ -1,11 +1,31 @@
-
+import { useState } from 'react'
+import Modal from './modal'
 
 const CustomModalPopup = () => {
-    return (
-        <div>
-            11111
-        </div>
-    );
-};
+  const [showModalPopup, setShowModalPopup] = useState(false)
 
-export default CustomModalPopup;
+  const handleToggleModalPopup = () => {
+    setShowModalPopup(!showModalPopup)
+  }
+
+  const onClose = () => {
+    setShowModalPopup(false)
+  }
+
+  return (
+    <div>
+      <button onClick={handleToggleModalPopup}>点我</button>
+      {showModalPopup && (
+        <Modal
+          id={'custom-id'}
+          onClose={onClose}
+          header={<h1>Custome Header</h1>}
+          body={<div>This is body</div>}
+          footer={<h2>Custome footer</h2>}
+        />
+      )}
+    </div>
+  )
+}
+
+export default CustomModalPopup
