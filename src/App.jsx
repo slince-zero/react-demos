@@ -11,6 +11,7 @@ import LightDarkMode from './components/light-dark-mode'
 import ScrollIndicator from './components/scroll-indicator'
 import TabsTest from './components/custom-tabs/tab-test'
 import CustomModalPopup from './components/custom-modal-popup'
+import GithubProfileFinder from './components/github-profile-finder'
 
 function App() {
   return (
@@ -46,7 +47,10 @@ function App() {
       {/* <TabsTest /> */}
 
       {/* 自定义弹窗组件 */}
-      <CustomModalPopup />
+      {/* <CustomModalPopup /> */}
+
+      {/* Github用户搜索组件 */}
+      <GithubProfileFinder />
     </div>
   )
 }
