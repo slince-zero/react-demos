@@ -18,6 +18,8 @@ import FeatureFlag from './components/feature-flag'
 import FeatureFlagProvider from './components/feature-flag/context'
 import UseFetchHookTest from './components/use-fetch/test'
 import UseOutsideClickHookTest from './components/use-outside-click/test'
+import UseWindowResizeTest from './components/use-window-resize/test'
+
 function App() {
   return (
     <div className="App">
@@ -70,7 +72,8 @@ function App() {
 
       {/* 自定义钩子组件 */}
       {/* <UseFetchHookTest /> */}
-      <UseOutsideClickHookTest />
+      {/* <UseOutsideClickHookTest /> */}
+      <UseWindowResizeTest />
     </div>
   )
 }
