@@ -5,16 +5,5 @@
 html,
 body {
   height: 100vh;
-  font-family: Helvetica
-}
-
-
-
-.App {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* 这将使得 .App 成为一个高度为视窗高度的 flex 容器 */
+  font-family: Helvetica;
 }
