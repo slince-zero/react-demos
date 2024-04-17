@@ -65,6 +65,9 @@
 }
 
 .weather-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(33.333% - 40px);
   height: 100px;
   border-radius: 10px;
@@ -72,5 +75,6 @@
   box-shadow: #e6a3a3 5px 5px 5px;
   border: 1px solid;
   opacity: 0.8;
+  top: 50%;
   transition: all 1s ease;
 }
