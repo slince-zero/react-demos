@@ -43,6 +43,7 @@
 
 .city-name {
   margin-bottom: 10px;
+  height: 100%;
 }
 
 .loading {
@@ -51,29 +52,9 @@
   color: #000;
 }
 
-.date {
-  font-size: 18px;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.temp {
-  font-size: 64px;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-}
-
-.description {
-  color: #000000;
-  font-size: 22px;
-  font-weight: 500;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
 .weather-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 20px;
@@ -83,8 +64,13 @@
   text-align: center;
 }
 
-.column {
-  display: flex;
-  align-items: center;
-  line-height: 1px;
+.weather-info p {
+  width: calc(33.333% - 40px);
+  height: 100px;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: #e6a3a3 5px 5px 5px;
+  border: 1px solid;
+  opacity: 0.8;
+  transition: all 1s ease;
 }
