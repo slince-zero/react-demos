@@ -5,7 +5,6 @@ import RecipeItem from '../../components/receipe-list'
 export default function Home() {
   const { loading, recipeList } = useContext(RecipeContext)
   if (loading) return <div>Loading...Please wait!</div>
-
   return (
     <div className="py-8 container mx-auto flex flex-wrap justify-center gap-10">
       {recipeList && recipeList.length > 0 ? (
