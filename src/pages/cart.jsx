@@ -1,11 +1,15 @@
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import CartTile from '../components/card-title/index'
+import { increment, decrement } from '../store/test/test'
 
 export default function Cart() {
   const [totalCart, setTotalCart] = useState(0)
   const cart = useSelector((state) => state.card)
+
+  const num = useSelector((state) => state.counter.value)
+  const dispatch = useDispatch()
 
   useEffect(() => {
     let total = 0
@@ -54,6 +58,23 @@ export default function Cart() {
           </Link>
         </div>
       )}
+
+      <div>
+        <h1>计时器：</h1>
+        <button
+          onClick={() => dispatch(increment())}
+          className=" bg-purple-400 cursor-pointer "
+        >
+          +1
+        </button>
+        <span className=" m-5">{num}</span>
+        <button
+          onClick={() => dispatch(decrement())}
+          className=" bg-purple-400 cursor-pointer "
+        >
+          -1
+        </button>
+      </div>
     </div>
   )
 }

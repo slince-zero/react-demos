@@ -24,3 +24,13 @@ Redux是一个用于管理JavaScript应用状态的库。它提供了一种集�
 5. 如果你的React组件使用了useSelector Hook来访问状态，那么当状态改变时，这些组件会重新渲染。
 
 在cart.jsx文件中，useSelector((state) => state.card)是用来从Redux store中获取card状态的。当card状态改变时，Cart组件会重新渲染。
+
+
+
+## 区分react中的state和redux中的state
+
+1. React的state：React的state是组件内部的状态，它只能在该组件内部访问和更新。每个组件都有自己的state，组件的state改变时，该组件会重新渲染。React的state通常用于存储和管理UI状态，例如按钮是否被点击，输入框的值等。
+
+2. Redux的state：Redux的state是全局的，它存储在**Redux store**中，可以在任何地方访问和更新。Redux的state通常用于存储和管理跨组件或者全局的状态，例如用户信息，购物车数据等。
+
+总的来说，Redux的state和React的state都是用来存储和管理应用状态的，但Redux的state是全局的，而React的state是组件内部的。在实际开发中，我们通常会根据状态的使用范围和复杂性来决定使用哪种state。
